@@ -1,0 +1,106 @@
+.about {
+  min-height: calc(100vh - 160px);
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 3rem 2rem; /* Matches the minimal home padding scale */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  /* Background image scales responsively inside the box */
+  background-image: url('/about.avif'); /* Swap with your target file name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+}
+
+/* Base section configuration alignment */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 🌟 THE MIRRORED TRANSLUCENT TEXT CONTAINER BOX 🌟 */
+.text-container-about {
+  background-color: rgba(229, 14, 14, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 4rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 600px; /* Limits the container width for layout balance */
+}
+
+/* Mirror your massive ultra-bold typography styling */
+.text-container-about h2 {
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3.5vw, 2.2rem); /* Scales smoothly like the h1 */
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 1.5rem 0; /* Margin pushes down slightly onto your skills row */
+}
+
+.skills-title {
+  /* Dynamic size: neat sub-heading scale */
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: #38bdf8; /* High-contrast deep navy blue */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  max-width: fit-content;
+
+  /* Creates a 1rem gap underneath, pushing down onto your list items */
+  margin: 0 0 1rem 0;
+}
+
+/* Layout layout for your tech skills tags */
+.skills-list {
+  display: flex;
+  flex-direction: column; /* Forces items to stack vertically */
+  /* CHANGE THESE TWO LINES TO ALIGN EVERYTHING TO THE LEFT */
+  align-items: flex-start; /* Aligns text lines cleanly to the left */
+  max-width: fit-content; /* Shrinks the list box size to match the longest word */
+
+  /* Centers the narrow list boundary box inside the main glass card */
+  margin: 0 auto;
+
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* Style your individual technology tags to look sharp inside the box */
+.skills-list li {
+  color: #e0e7ff; /* Icy high-contrast blue-white text */
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold text profile */
+  letter-spacing: 0.5px;
+  padding: 0.25rem 0;
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+  cursor: default;
+  text-align: left;
+}
+
+/* High contrast interaction highlight style */
+.skills-list li:hover {
+  color: #38bdf8; /* High-contrast electric cyan when hovering */
+  transform: translateX(4px); /* Micro zoom focus effect */
+}
+
+.skills-list li::before {
+  content: '▹ ';
+  color: #38bdf8;
+  padding-right: 8px;
+  font-weight: 900;
+}

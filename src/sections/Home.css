@@ -1,0 +1,48 @@
+.home {
+  min-height: calc(100vh - 160px); /* Fills screen minus navbar height */
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Background properties */
+  background-image: url('/home-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  color: #ffffff; /* Contrast text color */
+}
+
+.text-container h1 {
+  font-weight: 900;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0;
+  text-shadow: 1px 1px #88f8f8;
+}
+
+/* 🌟 THE TRANSLUCENT TEXT CONTAINER BOX 🌟 */
+.text-container {
+  /* Translucent black backing (use 255, 255, 255, 0.15 for a white glass look) */
+  background-color: rgba(0, 0, 0, 0.4);
+
+  /* Blurs the background image under the box for a premium glass effect */
+
+  /* Card spacing bounds */
+  padding: 2rem 4rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle glowing border edge */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#progress {
+  text-shadow: 0.5px 0.5px #88f8f8;
+  text-align: center;
+  color: #2503fc;
+  font-size: 30px;
+}
