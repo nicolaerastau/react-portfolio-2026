@@ -8,30 +8,35 @@ import About from '@/sections/About';
 import Projects from '@/sections/Projects';
 import Contact from '@/sections/Contact';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: 'about',
+          element: <About />,
+        },
+        {
+          path: 'projects',
+          element: <Projects />,
+        },
+        {
+          path: 'contact',
+          element: <Contact />,
+        },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <App />, // App serves as the shell layout
-    children: [
-      {
-        index: true, // 2. Home is now the main entry page (/)
-        element: <Home />,
-      },
-      {
-        path: 'about', // 3. About moves to (/about)
-        element: <About />,
-      },
-      {
-        path: 'projects', // Accessible at /projects
-        element: <Projects />,
-      },
-      {
-        path: 'contact', // Accessible at /contact
-        element: <Contact />,
-      },
-    ],
+    basename: '/react-portfolio-2026',
   },
-]);
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

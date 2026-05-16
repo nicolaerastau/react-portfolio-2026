@@ -2,61 +2,50 @@
   height: auto;
   width: 100%;
   max-width: 100%;
-  padding: 3rem 2rem; /* Matches your exact Home and About outer padding bounds */
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-
-  /* Responsive background canvas layer */
-  background-image: url('/projects-bg.png'); /* Swap with your asset name */
+  background-image: url('/projects-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Base inner shell section boundaries mapping */
 .projects .section {
   width: 100%;
-  max-width: 1000px; /* Wider limit box to hold multiple cards side-by-side */
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Mirror your massive ultra-bold main headers styling */
 .projects h2 {
   font-weight: 700;
   font-size: clamp(2rem, 5vw, 3.5rem);
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  margin: 0 0 2rem 0; /* Clear gap down to your cards display */
+  margin: 0 0 2rem 0;
   text-align: center;
 }
 
-/* 🌟 RESPONSIVE DYNAMIC CARD GRID VIEWPORTS 🌟 */
 .project-grid {
   display: grid;
   width: 100%;
-  gap: 2rem; /* Uniform air pockets between your work cards */
-
-  /* Automatically columns based on viewport room (min 280px wide each card) */
+  gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* 🌟 MIRRORED TRANSMUTED GLASS CARDS ARCHITECTURE 🌟 */
 .project-card {
-  /* Chooses your fading white glass layout or dark glass properties directly */
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.3) 0%,
     rgba(255, 255, 255, 0.05) 100%
   );
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
   padding: 2rem;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -70,39 +59,35 @@
     box-shadow 0.2s ease;
 }
 
-/* Floating shadow highlight interaction when exploring projects */
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.25);
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Card titles follow your centered skills title scale rules */
 .project-card h3 {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 700;
-  color: #1a16a2; /* Matches your core dark brand navy blue (or use #38bdf8 for dark glass) */
+  color: #1a16a2;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0 0 0.75rem 0;
 }
 
-/* Balanced summary description text */
 .project-card p {
   font-size: 1rem;
   font-weight: 500;
-  color: #334155; /* High readability dark slate gray (or use #e0e7ff for dark glass) */
+  color: #334155;
   line-height: 1.5;
   margin: 0 0 1.5rem 0;
-  flex: 1; /* Pushes the "View Live" links flush to the absolute bottom of cards */
+  flex: 1;
 }
 
-/* Hyperlink button triggers */
 .project-card a {
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #1a16a2; /* Bold brand link color */
+  color: #1a16a2;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: inline-block;
@@ -112,8 +97,7 @@
     transform 0.15s ease;
 }
 
-/* Hyperlink hover animations nudge forward */
 .project-card a:hover {
-  color: #38bdf8; /* Swaps to crisp accent cyan */
+  color: #38bdf8;
   transform: translateX(4px);
 }

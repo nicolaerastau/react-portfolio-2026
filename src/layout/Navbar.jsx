@@ -7,17 +7,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* <div className="navbar-logo">
-        <NavLink to="/">Portfolio</NavLink>
-      </div> */}
       <ul className="navbar-links">
-        {/* 1. Add the Home link pointing to "/" */}
         <li>
           <NavLink to="/" className={getLinkClass}>
             Home
           </NavLink>
         </li>
-        {/* 2. Change the About link to point to "/about" */}
         <li>
           <NavLink to="/about" className={getLinkClass}>
             About

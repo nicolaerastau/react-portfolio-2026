@@ -3,25 +3,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0; /* Padding inside the footer */
-  background-color: #1a1a1a; /* Matching dark mode background */
+  padding: 1rem 0;
+  background-color: #1a1a1a;
   color: #ffffff;
-
-  /* 🌟 PULLS THE ENTIRE FOOTER BAR UPWARDS SLIGHTLY 🌟 */
   position: relative;
-  bottom: 15px; /* Pulls it 15px off the floor edge (Adjust this number as you like!) */
-
-  /* Optional: Add smooth spacing underneath if your global wrapper cuts it off */
   margin-top: auto;
 }
 .footer p {
   margin: 0;
-
-  /* 🌟 PUSHES THE TEXT UPWARD AWAY FROM THE SCREEN FLOOR 🌟 */
-  padding-bottom: 20px; /* Increase this number to pull it even higher up */
-
-  /* Keeps the typography readable and crisp */
+  padding-bottom: 20px;
   font-size: 0.9rem;
-  color: #a3a3a3; /* Light gray text */
+  color: #a3a3a3;
   text-align: center;
 }

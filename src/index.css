@@ -10,7 +10,6 @@ html {
   overflow: hidden;
 }
 
-/* Optional wrapper styling to prevent footer overlapping */
 .portfolio-container {
   display: flex;
   flex-direction: column;
@@ -21,6 +20,6 @@ html {
 
 main {
   flex: 1;
-  padding: 2rem; /* Adds breathing room for your main section content */
+  padding: 2rem;
   overflow: hidden;
 }

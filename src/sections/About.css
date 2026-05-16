@@ -3,22 +3,19 @@
   height: auto;
   width: 100%;
   max-width: 100%;
-  padding: 3rem 2rem; /* Matches the minimal home padding scale */
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-
-  /* Background image scales responsively inside the box */
-  background-image: url('/about.avif'); /* Swap with your target file name */
+  background-image: url('/about.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 6px;
 }
 
-/* Base section configuration alignment */
 .about-section {
   display: flex;
   justify-content: center;
@@ -26,7 +23,6 @@
   width: 100%;
 }
 
-/* 🌟 THE MIRRORED TRANSLUCENT TEXT CONTAINER BOX 🌟 */
 .text-container-about {
   background-color: rgba(229, 14, 14, 0.4);
   backdrop-filter: blur(12px);
@@ -35,54 +31,44 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   text-align: center;
-  max-width: 600px; /* Limits the container width for layout balance */
+  max-width: 600px;
 }
 
-/* Mirror your massive ultra-bold typography styling */
 .text-container-about h2 {
   font-weight: 700;
-  font-size: clamp(1.35rem, 3.5vw, 2.2rem); /* Scales smoothly like the h1 */
+  font-size: clamp(1.35rem, 3.5vw, 2.2rem);
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  margin: 0 0 1.5rem 0; /* Margin pushes down slightly onto your skills row */
+  margin: 0 0 1.5rem 0;
 }
 
 .skills-title {
-  /* Dynamic size: neat sub-heading scale */
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 600;
-  color: #38bdf8; /* High-contrast deep navy blue */
+  color: #38bdf8;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   max-width: fit-content;
-
-  /* Creates a 1rem gap underneath, pushing down onto your list items */
   margin: 0 0 1rem 0;
 }
 
-/* Layout layout for your tech skills tags */
 .skills-list {
   display: flex;
-  flex-direction: column; /* Forces items to stack vertically */
-  /* CHANGE THESE TWO LINES TO ALIGN EVERYTHING TO THE LEFT */
-  align-items: flex-start; /* Aligns text lines cleanly to the left */
-  max-width: fit-content; /* Shrinks the list box size to match the longest word */
-
-  /* Centers the narrow list boundary box inside the main glass card */
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: fit-content;
   margin: 0 auto;
-
   gap: 0.75rem;
   list-style: none;
   padding: 0;
   width: 100%;
 }
 
-/* Style your individual technology tags to look sharp inside the box */
 .skills-list li {
-  color: #e0e7ff; /* Icy high-contrast blue-white text */
+  color: #e0e7ff;
   font-size: 1.1rem;
-  font-weight: 700; /* Bold text profile */
+  font-weight: 700;
   letter-spacing: 0.5px;
   padding: 0.25rem 0;
   transition:
@@ -92,10 +78,9 @@
   text-align: left;
 }
 
-/* High contrast interaction highlight style */
 .skills-list li:hover {
-  color: #38bdf8; /* High-contrast electric cyan when hovering */
-  transform: translateX(4px); /* Micro zoom focus effect */
+  color: #38bdf8;
+  transform: translateX(4px);
 }
 
 .skills-list li::before {
