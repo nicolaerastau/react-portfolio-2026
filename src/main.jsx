@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import App from '@/App.jsx';
 import Home from '@/sections/Home';
@@ -8,7 +8,7 @@ import About from '@/sections/About';
 import Projects from '@/sections/Projects';
 import Contact from '@/sections/Contact';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       path: '/',
@@ -34,7 +34,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: '/react-portfolio-2026',
+    basename: '/',
   },
 );
 
