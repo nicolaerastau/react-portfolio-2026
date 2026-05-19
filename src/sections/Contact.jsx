@@ -15,14 +15,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Thank you, ${formData.name}! Your message has been simulated.`);
-    setFormData({ name: '', email: '', message: '' }); 
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
     <div className="contact">
       <section id="contact" className="section">
-        <h2>Get In Touch</h2>
-
         <div className="text-container-contact">
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="form-group">
